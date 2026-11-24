@@ -1,0 +1,11 @@
+# Initialize uv project metadata
+uv init --bare
+
+
+# Set Python version
+uv python pin 3.12
+
+uv add -r requirements.txt
+
+# Install dependencies and create .venv
+uv sync
